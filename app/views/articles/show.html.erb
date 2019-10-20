@@ -18,6 +18,7 @@
       <strong>Comment:</p></strong>
         <%= comment.body %>
         </p>
+
         <% end %>
 <h2>Add a comment:</h2>
 <%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
